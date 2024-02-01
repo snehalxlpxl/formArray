@@ -1,1 +1,14 @@
-<p>invoice works!</p>
+
+<form class="example-form" [formGroup]="rectform" (ngSubmit)="save()"> 
+    <h1>Invoice Detail</h1>
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Sushi" formControlName="name"> 
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..." formControlName="comment"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Primary</button>
+  </form>
