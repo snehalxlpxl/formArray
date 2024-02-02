@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { InvoiceComponent } from "./invoice/invoice.component";
+import { InvoiceComponent } from './invoice/invoice.component';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { InvoiceComponent } from "./invoice/invoice.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, InvoiceComponent]
+    imports: [CommonModule, RouterOutlet,InvoiceComponent]
 })
 export class AppComponent {
   title = 'formarrayDemo';
